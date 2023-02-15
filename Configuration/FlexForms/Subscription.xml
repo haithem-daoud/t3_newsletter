@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>Configuration</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.from>
+                        <TCEforms>
+                            <label>E-Mail Sender</label>
+                            <config>
+                                <type>input</type>
+                                <size>30</size>
+                                <eval>trim,email,required</eval>
+                            </config>
+                        </TCEforms>
+                    </settings.from>
+                    
+                    <settings.confirmationEmailSubject>
+                        <TCEforms>
+                            <label>Subject for confirmation email</label>
+                            <config>
+                                <type>input</type>
+                                <size>30</size>
+                                <eval>trim,required</eval>
+                                <default>Email Confirmation</default>
+                            </config>
+                        </TCEforms>
+                    </settings.confirmationEmailSubject>
+                    
+                    <settings.redirectPageUid_Subscribed>
+                        <TCEforms>
+                            <label>Redirect Page after Subscription</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                                <required>1</required>
+                            </config>
+                        </TCEforms>
+                    </settings.redirectPageUid_Subscribed>
+                    
+                    <settings.dataPrivacyPageUid>
+                        <TCEforms>
+                            <label>Privacy Policy page</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                                <required>1</required>
+                            </config>
+                        </TCEforms>
+                    </settings.dataPrivacyPageUid>
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

@@ -1,0 +1,31 @@
+{
+    "name": "typo3/t3-newsletter",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "authors": [
+        {
+            "name": "Haithem Daoud",
+            "role": "TYPO3 Developer"
+        }
+    ],
+    "version": "1.0.0",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "keywords": [
+        "TYPO3 CMS"
+    ],
+    "require": {
+        "typo3/cms-core": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "TYPO3\\T3Newsletter\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "t3_newsletter"
+        }
+    }
+}

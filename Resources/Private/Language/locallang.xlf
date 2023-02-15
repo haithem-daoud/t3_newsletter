@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-04-12T13:11:47Z" product-name="t3_newsletter">
+		<header/>
+		<body>
+            <trans-unit id="subscription.gender.select">
+                <source>Select ...</source>
+            </trans-unit>
+            <trans-unit id="subscription.gender.male">
+                <source>Mr.</source>
+            </trans-unit>
+            <trans-unit id="subscription.gender.female">
+                <source>Ms.</source>
+            </trans-unit>
+            <trans-unit id="subscription.label.gender">
+				<source>Gender</source>
+			</trans-unit>
+			<trans-unit id="subscription.label.firstname">
+				<source>First Name</source>
+			</trans-unit>
+			<trans-unit id="subscription.label.lastname">
+				<source>Last Name</source>
+			</trans-unit>
+			<trans-unit id="subscription.label.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="subscription.label.email.confirmation">
+				<source>Confirm Email</source>
+			</trans-unit>
+			<trans-unit id="subscription.label.company">
+				<source>Company</source>
+			</trans-unit>
+			<trans-unit id="subscription.label.submit">
+				<source>Subscribe to owr newsletter</source>
+			</trans-unit>
+			<trans-unit id="subscription.label.data_privacy_accepted">
+                <source><![CDATA[I Agree to the terms of <a target="_blank" href="%1$s">privacy policy</a>.]]></source>
+            </trans-unit>
+			<trans-unit id="subscription.error.firstname">
+				<source>First Name field is required</source>
+			</trans-unit>
+			<trans-unit id="subscription.error.lastname">
+				<source>Last Name field is required</source>
+			</trans-unit>
+			<trans-unit id="subscription.error.email">
+				<source>Enter a valid Email Address</source>
+			</trans-unit>
+			<trans-unit id="subscription.error.email.confirmation">
+				<source>Enter a valid Email Address</source>
+			</trans-unit>
+			<trans-unit id="subscription.error.email.confirmation.identical">
+				<source>Email Confirmation Address and Email Address should be the same</source>
+			</trans-unit>
+			<trans-unit id="subscription.error.email.exists">
+				<source>Email already exists</source>
+			</trans-unit>
+			<trans-unit id="subscription.error.gender">
+				<source>Gender field is required</source>
+			</trans-unit>
+			<trans-unit id="subscription.error.data_privacy_accepted">
+				<source>Agree to the terms of privacy policy</source>
+			</trans-unit>
+            <trans-unit id="subscription.confirm.success">
+				<source>Email is confirmed. You subscribed successfully to our newsletter.</source>
+			</trans-unit>
+            <trans-unit id="subscription.confirm.already-confirmed">
+				<source>This email address is already confirmed.</source>
+			</trans-unit>
+            <trans-unit id="subscription.confirm.error">
+				<source>Oops. Something went wrong.</source>
+			</trans-unit>
+            <trans-unit id="subscription.processError">
+				<source>The registration could not be processed successfully. Please contact us.</source>
+			</trans-unit>
+			<trans-unit id="subscription.email.error.unique">
+				<source>Email is not unique !!</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

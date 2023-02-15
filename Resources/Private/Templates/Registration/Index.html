@@ -1,0 +1,63 @@
+
+<f:form name="subscription" object="{subscription}" novalidate="novalidate">
+
+    <f:if condition="{errors.processError}">
+        {errors.processError}
+    </f:if>
+
+    <div>
+        <label for="gender">{f:translate(key:'subscription.label.gender')} *</label><br>
+        <f:form.select id="gender" options="{subscription.genderOptions}" property="gender" />
+    </div>
+    <f:if condition="{errors.gender}">{errors.gender}</f:if>
+
+    <div>
+        <label for="firstname">{f:translate(key:'subscription.label.firstname')} *</label><br>
+        <f:form.textfield id="firstname" property="firstname" required="true" />
+    </div>
+    <f:if condition="{errors.firstname}">{errors.firstname}</f:if>
+
+    <div>
+        <label for="lastname">{f:translate(key:'subscription.label.lastname')} *</label><br>
+        <f:form.textfield id="lastname" property="lastname" required="true" />
+    </div>
+    <f:if condition="{errors.lastname}">{errors.lastname}</f:if>
+
+    <div>
+        <label for="email">{f:translate(key:'subscription.label.email')} *</label><br>
+        <f:form.textfield type="email" id="email" property="email" required="true" />
+    </div>
+    <f:if condition="{errors.email}">{errors.email}</f:if>
+
+    <div>
+        <label for="email_confirmation">{f:translate(key:'subscription.label.email.confirmation')} *</label><br>
+        <f:form.textfield type="email" id="email_confirmation" property="emailConfirmation"  additionalAttributes="{tabindex:'-1'}" />
+    </div>
+    <f:for each="{errors.email_confirmation}" as="item" iteration="iterator">
+        <f:if condition="{iterator.isLast} && {iterator.total} > 1">
+            <br>
+        </f:if>
+        <f:if condition="{item}">{item}</f:if>
+    </f:for>
+
+    <div>
+        <label for="company">{f:translate(key:'subscription.label.company')} *</label><br>
+        <f:form.textfield id="company" property="company" />
+    </div>
+    <f:if condition="{errors.company}">{errors.company}</f:if>
+
+    <label>
+        <f:form.checkbox id="data_privacy_accepted" property="dataPrivacyAccepted" value="1" />
+    </label>
+
+    <f:variable name="dataPrivacyPageUrl">{f:uri.page(pageUid:'{settings.dataPrivacyPageUid}')}</f:variable>
+    <label for="data_privacy_accepted">
+        <f:format.raw>{f:translate(key:'subscription.label.data_privacy_accepted', arguments:'{0: dataPrivacyPageUrl}')}*</f:format.raw>
+    </label>
+
+    <f:if condition="{errors.data_privacy_accepted}">{errors.data_privacy_accepted}</f:if>
+
+    <br />
+
+    <button type="submit">{f:translate(key:'subscription.label.submit')}</button>
+</f:form>
